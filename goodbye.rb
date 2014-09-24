@@ -1,5 +1,7 @@
 require 'sinatra'
 
-get '/:name' do |n|
-  "Goodbye #{n}! We miss you!"
+get '/goodbye/:name' do |n|
+  @title = "またね"
+  @name = n
+  erb :index
 end
