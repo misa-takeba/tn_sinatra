@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+- 2.1.2
+deploy:
+  provider: heroku
+  api_key:
+    secure: cnoKrPMSug8kBzRZEk1wpFq1ZiLD3j3gKWDEv3YvQiCnOp5heT0lkGVTMjZ34sfk2gJvz6E5vBsI+k4pidmqHbzOXrA9EahGgglF1iDKp7TSc022kcFr2vDhr1J/Eqfwmh0SEC8MoPKZP7RHOooL/egrowCGRQBWMTLg6fxJzfU=
+  app: tn_sinatra
+  on:
+    repo: misa-takeba/tn_sinatra
+#addons:
+#  postgresql: "9.3"
+#before_script:
+#  - psql -c 'create database travis_ci_test;' -U postgres
+#  - cp config/database.yml.travis config/database.yml
