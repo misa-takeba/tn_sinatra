@@ -1,5 +1,5 @@
 require 'sinatra'
 
-get '/' do
-  "Hello World!"
+get '/hello/:name' do
+  "Hello params[:name]!"
 end
