@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/hello/:name' do
-  "Hello 'foo'!"
+  "Hello 'bar'!"
 end
