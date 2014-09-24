@@ -1,5 +1,5 @@
 require 'sinatra'
 
-get '/hello/:name' do
+get '/hello/bar' do
   "Hello 'bar'!"
 end
