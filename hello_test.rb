@@ -12,7 +12,7 @@ class HelloWorldTest <  Minitest::Test
   end
 
   def test_it_responses_ok
-    get '/'
+    get '/hello/anonymous'
     assert last_response.ok?
   end
 end
